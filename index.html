@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms in HTML</title>
+</head>
+<body>
+  <form>
+  <header><h1>University registration form</h1>
+  <p>please fill out the form below to register</p><hr></header>
+
+  <fieldset>
+  <legend>Personal Information</legend><br><br>
+
+  <label for="name">First name:</label>
+  <input type="text" name="username" id="name" placeholder="eg:Arjun" required><br><br>
+
+  <label for="sname">Last name:</label>
+  <input type="text" name="usersname" id="sname" placeholder="eg:Kumar" required><br><br>
+
+  <label for="dob">Date of birth:</label>
+  <input type="date" name="userdob" id="dob" required><br><br>
+
+  <label>Gender:</label><br>
+  <label for="male">Male</label>
+  <input type="radio" name="usergender" id="male" value="male"><br>
+
+  <label for="female">Female</label>
+  <input type="radio" name="usergender" id="female" value="female"><br>
+  
+  <label for="other">Other</label>
+  <input type="radio" name="usergender" id="other" value="other"><br><br>
+
+  <label for="file">Upload your image:</label><br>
+  <input type="file" name="userimg" id="file"><br><br>
+  </fieldset><br><hr>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="mail">E-mail address:</label>
+    <input type="email" name="useremail" id="mail" placeholder="abc@gmail.com"><br><br>
+
+    <label for="phno">Phone Number:</label>
+    <input type="tel" name="userphno" id="phno" placeholder="+91"><br><br>
+
+    <label for="addressm">Mailing address</label><br>
+    <textarea name="addressm" id="addressm" rows="5" cols="18" placeholder="State , City , district , pin number"></textarea><hr>
+  </fieldset>
+
+  <fieldset>
+    <legend>Academic Information</legend>
+    <label for="course">Select your course:</label>
+    <select name="course" id="course">
+      <option value="CSE">CSE</option>
+      <option value="ISE">ISE</option>
+      <option value="CSS">CSS</option>
+    </select><br><br>
+
+    <label>Languages:</label><br>
+    <label for="python">Python</label>
+    <input type="checkbox" name="python" id="python" value="python"><br>
+
+    <label for="javascript">Javascript</label>
+    <input type="checkbox" name="javascript" id="javascript" value="javascript"><br>
+
+    <label for="C++">C++</label>
+    <input type="checkbox" name="C++" id="C++" value="C++"><br>
+
+    <label for="HTML">HTML</label>
+    <input type="checkbox" name="HTML" id="HTML" value="HTML"><br>
+
+    <label for="CSS">CSS</label>
+    <input type="checkbox" name="CSS" id="CSS" value="CSS"><br><hr>
+    </fieldset>
+
+    <fieldset>
+      <legend>Create your account:</legend>
+
+      <label for="userpassword">Create a password:</label>
+      <input type="password" name="userpassword" id="userpassword"><br><br>
+      
+      <label>Security question:</label>
+      <select name="Security" id="Security">
+        <option value="pet">What was your first pet's name?</option>
+        <option value="address">What was your first address?</option>
+        <option value="percentage">What was your last percentage?</option>
+        <option value="book">what was the first book you read?</option>
+      </select><br><br>
+
+    <label for="useranswer">Security answer:</label>
+    <input  type=text name="useranswer" id="useranswer" placeholder="Your answer here"><br><br>
+
+    <label for="terms">I Agree to the terms and conditions</label>
+    <input type="checkbox" name="terms" id="terms" required><hr>
+  </fieldset>
+  <button type="submit">submit</button>
+  <button type="reset">Reset info</button>
+  </form>
+</body>
+</html>
